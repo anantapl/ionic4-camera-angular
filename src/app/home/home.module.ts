@@ -5,6 +5,8 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { Camera } from '@ionic-native/camera/ngx';
+
 
 @NgModule({
   imports: [
@@ -17,6 +19,9 @@ import { HomePage } from './home.page';
         component: HomePage
       }
     ])
+  ],
+  providers: [   
+    Camera
   ],
   declarations: [HomePage]
 })
